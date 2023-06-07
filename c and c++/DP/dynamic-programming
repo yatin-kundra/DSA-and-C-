@@ -1,0 +1,18 @@
+Dynamic programming is an optimization technique to optimize the solution of a problem that takes a lot of time
+DP can be  done by 3 methodes:
+(1) top down approach:- recurssion + memoization
+(2) botoum up approach:- tablulation method 
+(3) space optimization 
+
+memoization is basicaly storing the solution of the sub problems created using recurssion. so that if the the 
+recursive function is called again it dosen't need to calculate for it again, it can simply look for it in a 
+data structure used.
+
+
+    --- to convert top down approach to botoum up approach --- 
+    (1) create a dp array 
+    (2) base cases 
+    (3) instedad of calling the function as  a recursive function we store the ans in the dp array, using
+        the perviously found solutions
+    (4) return the dp array
+

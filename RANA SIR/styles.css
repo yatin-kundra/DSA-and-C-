@@ -1,0 +1,98 @@
+.title{
+    color: rgb(18, 101, 47);
+    align-content: center;
+position: relative;
+    margin-top: 10px;
+    margin-left: 25%;
+    margin-right: 20%;
+    padding: auto;
+    font-weight: bold;
+    font-size: 200%
+
+}
+
+.submit_button{
+
+position: absolute;
+align-items: center;
+/* padding: 3px; */
+/* margin-bottom: 2px; */
+
+}
+
+.submit{
+    color: rgb(17, 4, 4);
+    position: absolute;
+    align-items: center;
+    padding: 5px;
+    top: -12.5px;
+    /* margin-left: 100px; */
+
+}
+
+
+.email{
+    position: relative;
+    padding: 5px;
+    top: 340px;
+    left: 5px;
+}
+
+
+/* .file{
+    display: none;
+} */
+
+.labell{
+    position: absolute;
+    /* height: 400px;
+    width: 400px; */
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-right: 100px;
+    padding-left: 100px;
+    border-radius: 12px;
+    border: 2px dashed #999;
+}
+
+.labell:hover{
+    color: rgb(216, 15, 15);
+    border:2px dashed rgb(216, 15, 15);
+}
+
+
+.dropbox{
+    align-content: center;
+    align-items: center;
+    left: 100px;
+    padding-left:10px ;
+}
+
+/* .ip{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+
+} */
+
+/* body{
+    /* background: #3da16a; 
+} */
+
+
+.email{
+    position: relative;
+    display:inline-block;
+}
+
+.r1{
+    margin-left: 10px;
+}
+
+.r2{
+    padding: 5px;
+
+
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script> -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="title"><h1>Image & Video Conversion</h1></div>
+    <div class="drop_box">
+        <input class="file" type="file" id="file" />
+        <label class="labell" for="file">upload file</label>
+    </div>
+    <div class="email">
+        <!-- parent -->
+        <form  enctype="text/plain"> 
+            <table cellspacing = "5">
+
+
+            <div class="r1">
+                <tr class="r1">
+                    <label for="cars">Choose a process : </label>
+  <select id="cars" name="cars">
+    <option value="volvo">grey scaling</option>
+    <option value="saab">reducing resolution</option>
+  </select>
+
+                </tr>
+            </div>
+
+                <div class="r2">
+                    <tr >
+                        <td>
+                            <label for="">enter your mail</label>
+                        </td>
+                        <td>
+                            <input class = "mail"type="email" name="your email" placeholder="youremail"><br>
+                        </td>
+                        <td>
+
+                                <!-- <button class="submit" type="submit" onclick="alert('check your entered mail for the results!')">submit</button>  -->
+                                <input type="submit" onclick="alert('check your entered mail for the results!')">
+                               
+                        </td>
+                    </tr>
+                </div>
+
+            </table>
+        </form>
+    </div>
+
+    <!-- <py-script src="myfile.py"> </py-script> -->
+</body>
+</html>

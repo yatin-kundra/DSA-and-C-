@@ -1,0 +1,74 @@
+#include<iostream> 
+ using namespace std; 
+  
+  
+ int main(){
+  
+     int n; 
+     cout<<"Enter number of d[i] is dimension matrix: "; 
+     cin>>n;
+      
+     int m[n]; 
+  
+     cout<<"Enter the elements of dimension matrix in order: "; 
+     for(int i=0;i<n;i++){ 
+         cin>>m[i]; 
+     } 
+  
+     int M[n][n],K[n][n],cur_min; 
+  
+     for(int i=0;i<n;i++){ 
+         for(int j=0;j<n;j++){ 
+             M[i][j]=0; 
+             K[i][j]=0; 
+         } 
+     } 
+  
+     int j; 
+     for(int z=1;z<n-1;z++){ 
+         for(int i=1;i<n-z;i++){ 
+             j=i+z; 
+             for(int k=i;k<j;k++){ 
+                 if(i==j){ 
+                     M[i][j]=0; 
+                     K[i][j]=0; 
+                     continue; 
+                 } 
+                 if(k==i){ 
+                     M[i][j]=M[i][k]+M[k+1][j]+m[i-1]*m[k]*m[j]; 
+                     K[i][j]=k; 
+                     continue; 
+                 } 
+                 cur_min=M[i][k]+M[k+1][j]+m[i-1]*m[k]*m[j]; 
+                 if(cur_min<M[i][j]){ 
+                     M[i][j]=cur_min; 
+                     K[i][j]=k; 
+                 } 
+             } 
+         } 
+     } 
+     int s=1,f=n-1; 
+     int arr[f]={0}; 
+  
+     while(s!=f){ 
+         s=K[s][f]+1; 
+         arr[s-1]=1; 
+     } 
+  
+     cout<<"The optimal chain sequence is: [("; 
+     int z=0; 
+     for(int i=1;i<n;i++){ 
+         cout<<" M"<<i<<" "; 
+         if(arr[i]==1){ 
+             cout<<")(("; 
+             z+=2; 
+         } 
+     } 
+     for(;z>0;z--) 
+         cout<<")"; 
+     cout<<"]"<<endl; 
+  
+     return 0; 
+  
+  
+ }

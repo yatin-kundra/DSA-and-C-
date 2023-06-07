@@ -1,0 +1,1 @@
+cout<<real<<"is the value of c"<<endl;
